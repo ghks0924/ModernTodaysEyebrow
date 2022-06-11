@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ModernTodaysEyebrow</string>
+
+    // Fragment
+    <string name="memos">메모</string>
+    <string name="messagess">문자</string>
+    <string name="calendar">홈</string>
+    <string name="sales">매출</string>
+    <string name="customers">고객</string>
+
+    // ETC
+    <string name="search">검색</string>
+    <string name="more">더보기</string>
+    <string name="abc_sort">가나다순</string>
+    <string name="recent_sort">저장순</string>
+    <string name="add">추가</string>
+
+</resources>

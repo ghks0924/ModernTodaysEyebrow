@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragment_calendar">
+
+    <fragment
+        android:id="@+id/fragment_calendar"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.CalendarFragment"
+        android:label="@string/calendar" />
+    <fragment
+        android:id="@+id/fragment_customers"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.CustomersFragment"
+        android:label="@string/customers" />
+    <fragment
+        android:id="@+id/fragment_memos"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.MemosFragment"
+        android:label="@string/memos">
+        <action
+            android:id="@+id/action_fragment_memos_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_messages"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.MessagesFragment"
+        android:label="@string/messagess" />
+    <fragment
+        android:id="@+id/fragment_sales"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.SalesFragment"
+        android:label="@string/sales" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.SearchFragment"
+        android:label="@string/search" />
+</navigation>
