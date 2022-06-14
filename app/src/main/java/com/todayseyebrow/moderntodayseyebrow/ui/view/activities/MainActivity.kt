@@ -1,4 +1,4 @@
-package com.todayseyebrow.moderntodayseyebrow.ui.view
+package com.todayseyebrow.moderntodayseyebrow.ui.view.activities
 
 import android.content.Context
 import android.os.Bundle

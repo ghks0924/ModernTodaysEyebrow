@@ -1,4 +1,4 @@
-package com.todayseyebrow.moderntodayseyebrow.ui.view
+package com.todayseyebrow.moderntodayseyebrow.ui.view.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +16,7 @@ import com.todayseyebrow.moderntodayseyebrow.R
 import com.todayseyebrow.moderntodayseyebrow.data.model.Memo
 import com.todayseyebrow.moderntodayseyebrow.databinding.FragmentMemosBinding
 import com.todayseyebrow.moderntodayseyebrow.ui.adapter.MemoAdapter
+import com.todayseyebrow.moderntodayseyebrow.ui.view.activities.MainActivity
 import com.todayseyebrow.moderntodayseyebrow.ui.viewmodel.MainViewModel
 import com.todayseyebrow.moderntodayseyebrow.util.collectLatestStateFlow
 import java.util.*

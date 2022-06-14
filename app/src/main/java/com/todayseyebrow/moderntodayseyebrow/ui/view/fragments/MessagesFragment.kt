@@ -1,4 +1,4 @@
-package com.todayseyebrow.moderntodayseyebrow.ui.view
+package com.todayseyebrow.moderntodayseyebrow.ui.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

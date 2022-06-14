@@ -3,7 +3,7 @@ package com.todayseyebrow.moderntodayseyebrow.util
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.todayseyebrow.moderntodayseyebrow.ui.view.MemosFragment
+import com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.MemosFragment
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

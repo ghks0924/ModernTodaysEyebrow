@@ -6,15 +6,15 @@
 
     <fragment
         android:id="@+id/fragment_calendar"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.CalendarFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.CalendarFragment"
         android:label="@string/calendar" />
     <fragment
         android:id="@+id/fragment_customers"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.CustomersFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.CustomersFragment"
         android:label="@string/customers" />
     <fragment
         android:id="@+id/fragment_memos"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.MemosFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.MemosFragment"
         android:label="@string/memos">
         <action
             android:id="@+id/action_fragment_memos_to_searchFragment"
@@ -26,14 +26,14 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_messages"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.MessagesFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.MessagesFragment"
         android:label="@string/messagess" />
     <fragment
         android:id="@+id/fragment_sales"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.SalesFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.SalesFragment"
         android:label="@string/sales" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.SearchFragment"
+        android:name="com.todayseyebrow.moderntodayseyebrow.ui.view.fragments.SearchFragment"
         android:label="@string/search" />
 </navigation>

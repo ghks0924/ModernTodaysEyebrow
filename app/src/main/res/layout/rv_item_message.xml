@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/message_item_cardview"
+        app:cardBackgroundColor="@color/light_main_yellow"
+        app:cardElevation="@dimen/_0dp"
+        app:rippleColor="@color/divider_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/message_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="문자 제목"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/notosanscjkkrbold"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@{viewModel.title}"
+                android:textColor="@color/main_grey" />
+
+            <TextView
+                android:id="@+id/message_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/message_title"
+                tools:text="문자내용"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/notosanscjkkrregular"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="@{viewModel.content}"
+                android:textColor="@color/main_grey" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
