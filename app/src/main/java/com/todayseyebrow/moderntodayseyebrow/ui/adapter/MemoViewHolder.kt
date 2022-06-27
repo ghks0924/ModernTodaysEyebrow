@@ -16,7 +16,7 @@ class MemoViewHolder(
         itemView.apply {
             binding.memoTitle.text = title
             binding.memoContent.text = content
-            binding.memoTitle.text = date
+            binding.memoDate.text = date
 
         }
 

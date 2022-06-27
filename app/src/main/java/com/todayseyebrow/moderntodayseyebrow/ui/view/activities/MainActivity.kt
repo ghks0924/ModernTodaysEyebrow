@@ -11,6 +11,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.todayseyebrow.moderntodayseyebrow.R
 import com.todayseyebrow.moderntodayseyebrow.data.db.MemoDatabase
+import com.todayseyebrow.moderntodayseyebrow.data.db.MessageDatabase
 import com.todayseyebrow.moderntodayseyebrow.data.repository.TotalRepositoryImpl
 import com.todayseyebrow.moderntodayseyebrow.databinding.ActivityMainBinding
 import com.todayseyebrow.moderntodayseyebrow.ui.viewmodel.MainViewModel
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         setupJetpackNavigation()
 
         val memoDB = MemoDatabase.getInstance(this)
-        val totalRepository = TotalRepositoryImpl(memoDB, datastore)
+        val messageDB = MessageDatabase.getInstance(this)
+        val totalRepository = TotalRepositoryImpl(memoDB, messageDB, datastore)
         val factory = MainViewModelProviderFactory(totalRepository, this)
         mainViewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
     }

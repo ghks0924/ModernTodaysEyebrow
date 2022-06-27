@@ -29,4 +29,16 @@
         <item name="android:textColor">@color/main_black</item>
     </style>
 
+    <style name="CustomContentTextRegularAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/notosanscjkkrregular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/main_grey</item>
+    </style>
+
+    <style name="CustomButtonTextMediumAppearance" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="fontFamily">@font/notosanscjkkrmedium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/main_grey</item>
+    </style>
+
 </resources>

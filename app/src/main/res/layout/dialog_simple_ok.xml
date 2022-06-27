@@ -22,52 +22,51 @@
             tools:text="TITLE" />
 
         <TextView
-            android:id="@+id/content_tv"
+            android:id="@+id/content_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/default_margin"
             android:layout_marginTop="@dimen/default_margin"
-            android:fontFamily="@font/notosanscjkkrregular"
-            android:includeFontPadding="false"
-
-            android:text="문자 그룹 추가"
-            android:textColor="@color/main_grey"
-            android:textSize="@dimen/default_text_size"
+            android:textAppearance="@style/CustomContentTextRegularAppearance"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/title_tv"
+            tools:text="BODY1" />
+
+        <TextView
+            android:id="@+id/content_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_small_margin"
+            android:textAppearance="@style/CustomContentTextRegularAppearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content_tv1"
+            tools:text="BODY2" />
 
 
         <LinearLayout
             android:id="@+id/button_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_40dp"
+            android:layout_marginTop="@dimen/default_margin"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/content_tv">
+            app:layout_constraintTop_toBottomOf="@id/content_tv2">
 
             <Button
-                android:id="@+id/dialog_cancel_btn"
+                android:id="@+id/cancel_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/white"
-                android:fontFamily="@font/notosanscjkkrmedium"
-                android:includeFontPadding="false"
                 android:stateListAnimator="@null"
-                android:text="취소"
-
-                android:textColor="@color/main_pink"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/dialog_ok_btn"
-                app:layout_constraintTop_toBottomOf="@+id/detail_name_et" />
+                android:textAppearance="@style/CustomButtonTextMediumAppearance"
+                tools:text="@string/cancel" />
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/_10dp"
-                android:layout_marginBottom="@dimen/_10dp"
-                android:background="@color/border_grey" />
+                android:background="@color/test_grey2" />
 
             <Button
                 android:id="@+id/dialog_ok_btn"
